@@ -1,0 +1,22 @@
+.acciones {
+  display: flex;
+  justify-content: center;
+}
+
+.icon_edit,
+.icon_delete {
+  font-size: 2rem;
+  margin: 2px;
+}
+
+.icon_edit {
+  color: #004d64;
+}
+
+.icon_delete {
+  color: #d90000;
+}
+
+.thead-table {
+  color: #004d64 !important;
+}

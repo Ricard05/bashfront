@@ -1,0 +1,25 @@
+.carta {
+  padding: 15px 0;
+  overflow: hidden;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  text-align: center;
+  margin: 20px;
+}
+
+.carta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.carta h5 {
+  margin-bottom: 15px;
+}
+
+.carta p {
+  line-height: 1.5;
+}
+.carta img {
+  width: 100%;
+}

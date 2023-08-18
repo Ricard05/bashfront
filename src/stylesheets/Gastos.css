@@ -1,0 +1,24 @@
+.contenedor-header {
+  display: flex;
+}
+
+.contenedor-header Button {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.gastos-table {
+  width: 100%;
+  margin: 0;
+}
+
+.gastos-table thead th {
+  text-align: left;
+  color: #e1da67;
+}
+
+.gastos-table tbody td {
+  text-align: left;
+  padding: 8px;
+  transition: all ease 0.2;
+}

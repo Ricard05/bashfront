@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9eff2;
+  color: #000;
+}
+
+.dash-welcome {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.dash-inicio-carta {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash-carta-logo {
+  align-self: flex-end;
+  margin-left: 30px;
+}
+
+.dash-container-table {
+  height: 480px;
+  overflow: auto;
+}
+
+.dash-table {
+  width: 100%;
+  position: relative;
+  transition: 250ms;
+}
+
+.dash-table tr {
+  border-top: 4px solid #151929;
+}
+
+.dash-table td,
+th {
+  padding: 10px;
+}
+
+.modal-footer {
+  background-color: #fff;
+}

@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+inicio-contenedor {
+  background-color: #fff;
+}
+
+nav {
+  transition: all 0.5s ease;
+}
+
+.inicio-encabezado {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/129492/pexels-photo-129492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio-encabezado::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 5vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  text-transform: capitalize;
+  content: "Bash tu aliado de confianza";
+  background-color: rgba(1, 1, 1, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.inicio-encabezado a {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: fit-content;
+}
+
+.inicio-encabezado a.active:after,
+.inicio-encabezado .nav-link:hover:after {
+  content: "";
+  position: absolute;
+  background-color: yellowgreen;
+  width: auto;
+  height: 0.3vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 15px;
+  animation-name: lineaAnimacion;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.inicio-subtitulo {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.inicio-seccion {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+  background-color: #fff;
+  color: #000;
+}
+
+.inicio-ubicanos {
+  margin-top: 0;
+  background-color: #151929;
+  color: #fff;
+}
+.inicio-seccion.inicio-activar {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.inicio-contenedor-cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inicio-skills {
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #151929;
+  color: #fff;
+}
+
+/* Animaciones */
+@keyframes lineaAnimacion {
+  0% {
+    transform: scaleX(0); /* La línea está oculta al inicio */
+  }
+  100% {
+    transform: scaleX(1); /* La línea se expande hasta el ancho completo */
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #141414;
+  width: 100vw;
+  color: #fff;
+  padding: 40px 90px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.inicio-redes i {
+  background-color: #fff;
+  color: black;
+  padding: 15px 0;
+  border-radius: 50px;
+  margin: 2px;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.inicio-copy {
+  padding: 40px 0 0 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.inicio-info {
+  text-align: left;
+}
+
+.inicio-info h3 {
+  padding: 20px;
+}
+
+.inicio-contacto i {
+  margin: 6px;
+}
+
+.inicio-botones a {
+  padding: 8px 10px;
+  border-radius: 10%;
+  transition: 5ms;
+}
+
+.inicio-botones a:hover {
+  background-color: yellowgreen;
+  color: #141414;
+}
+
+.contenedor-nosotros {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.imagen-equipo {
+  width: 500px;
+  height: 500px;
+  background-image: url("../assets/images/equipo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1166px) {
+  .inicio-subtitulo {
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,5 @@
+.chart-container {
+  width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
+  height: 400px; /* Altura fija del contenedor */
+  /* Agrega otros estilos según sea necesario */
+}

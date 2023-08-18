@@ -1,0 +1,9 @@
+.reporte-contenedor {
+  background-color: #1c2438 !important;
+  border: none;
+  color: #fff;
+}
+
+.reporte-contenedor p {
+  text-shadow: none;
+}
